@@ -1,10 +1,5 @@
 /* TABLE */
 
-@font-face {
-  font-family: "Pokemon GB", Regular;
-  src: url('../fonts/pokemon-gb-font/PokemonGb-RAeo.ttf'); 
-}
-
 table {
   border-collapse: separate;
   border-spacing: 1px;
@@ -41,12 +36,34 @@ td {
   font-size: 18px;
 }
 
-.pokemon-1 {
+.pokemon-0 {
   background-image: url('../images/pokemon_0.png')
 }
-
 
 .pokemon-2 {
   background-image: url('../images/pokemon_2.png')
 }
 
+.pokemon-4 {
+  background-image: url('../images/pokemon_4.png')
+}
+
+.pokemon-6 {
+  background-image: url('../images/pokemon_6.png')
+}
+
+.pokemon-8 {
+  background-image: url('../images/pokemon_8.png')
+}
+
+.pokemon-10 {
+  background-image: url('../images/pokemon_10.png')
+}
+
+.pokemon-12 {
+  background-image: url('../images/pokemon_12.png')
+}
+
+.pokemon-14 {
+  background-image: url('../images/pokemon_14.png')
+}
