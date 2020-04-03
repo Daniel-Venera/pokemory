@@ -83,8 +83,8 @@ function shuffleArray(array) {
 }
 function randomContent(array) {
   for (var i = 0; i < array.length; i += 2) {
-    array[i].classList.add(`pokemon-0`) 
-    array[i + 1].classList.add(`pokemon-0`)
+    array[i].classList.add(`pokemon-1`) 
+    array[i + 1].classList.add(`pokemon-1`)
   }
 }
 let hiddenSquaresShuffled = shuffleArray(hiddenSquares)
