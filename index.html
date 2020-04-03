@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Memory Pokemon</title>
+</head>
+
+<body>
+  
+  <audio id="final-level">
+    <source src="sounds/background_music_2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="game-over">
+    <source src="sounds/game_over.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="click">
+    <source src="sounds/click.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="click">
+    <source src="sounds/click.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="success">
+    <source src="sounds/success.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="success">
+    <source src="sounds/success.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="victory">
+    <source src="sounds/victory_2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="metamorph">
+    <source src="sounds/metamorph.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="metamorph">
+    <source src="sounds/metamorph.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="psykokwak">
+    <source src="sounds/psykokwak_2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="psykokwak">
+    <source src="sounds/psykokwak_2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+
+  <div style='max-width: 600px; height: 700px' class='container my-5 d-flex text-center flex-column p-2' >
+    <h1>Pokemon Memory</h1>
+    <p id='level'>Level #1</p>
+    <p id='chronometer-tag'>
+      <span id='ten-minutes' class='time'>0</span>
+      <span id='minutes' class='time'>0</span> :
+      <span id='ten-seconds' class='time'>0</span>
+      <span id='seconds' class='time'>0</span> :
+      <span id="milliseconds-three" class='time'>0</span>
+      <span id="milliseconds-two" class='time'>0</span>
+      <span id="milliseconds-one" class='time'>0</span>
+    </p>
+    <p id='message'></p>
+    <p id='level-up'></p>
+    <table class='align-self-center m-2'>
+      <tbody>
+        <tr>
+          <td class="hidden"></td>
+          <td class='hidden'></td>
+          
+        </tr>
+        <tr>
+          <td class='hidden'></td>
+          <td class='hidden'></td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/functions.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

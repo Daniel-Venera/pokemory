@@ -1,0 +1,52 @@
+/* TABLE */
+
+@font-face {
+  font-family: "Pokemon GB", Regular;
+  src: url('../fonts/pokemon-gb-font/PokemonGb-RAeo.ttf'); 
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* STATUS */
+
+.hidden {
+  background-image: url('../images/pokeball.png') !important
+}
+
+.hidden {
+  border-radius: 8px;
+  font-size: 0;
+}
+
+.finished {
+  background-image: none !important
+}
+
+.rotation {
+  transform: rotate(180deg)
+}
+
+#message {
+  font-size: 18px;
+}
+
+.pokemon-1 {
+  background-image: url('../images/pokemon_0.png')
+}
+
+
+.pokemon-2 {
+  background-image: url('../images/pokemon_2.png')
+}
+
