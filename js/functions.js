@@ -83,10 +83,8 @@ function shuffleArray(array) {
 }
 function randomContent(array) {
   for (var i = 0; i < array.length; i += 2) {
-    array[i].classList.add(`pokemon-${i}`) 
-    array[i + 1].classList.add(`pokemon-${i}`)
-    array[i].style.backgroundImage = `url("../images/pokemon_${i}.png")` 
-    array[i+1].style.backgroundImage = `url("../images/pokemon_${i}.png")` 
+    array[i].style.backgroundImage = `url("./images/pokemon_${i}.png")` 
+    array[i+1].style.backgroundImage = `url("./images/pokemon_${i}.png")` 
   }
 }
 let hiddenSquaresShuffled = shuffleArray(hiddenSquares)
@@ -108,7 +106,7 @@ function game() {
       }
 
       // PSYCHOQUACK
-      if (!(tableBody.classList.contains('rotation')) && this.style.backgroundImage == `url("../images/pokemon_12.png")`) {
+      if (!(tableBody.classList.contains('rotation')) && this.style.backgroundImage == `url("./images/pokemon_12.png")`) {
         if (psykokwakAudioSequence == 0) {
           psykokwakAudio[0].play()
           psykokwakAudioSequence = 1
@@ -155,7 +153,7 @@ function game() {
               revealedSquares[0].classList.replace('revealed', 'hidden')
               revealedSquares[0].classList.replace('revealed', 'hidden')
             }, 300)
-            if (revealedSquares[0].style.backgroundImage === `url("../images/pokemon_8.png")` || revealedSquares[1].style.backgroundImage === `url("../images/pokemon_8.png")`) {
+            if (revealedSquares[0].style.backgroundImage === `url("./images/pokemon_8.png")` || revealedSquares[1].style.backgroundImage === `url("./images/pokemon_8.png")`) {
               if (metamorphAudioSequence == 0) {
                 metamorphAudio[0].play()
                 metamorphAudioSequence = 1
@@ -163,15 +161,15 @@ function game() {
                 metamorphAudio[1].play()
                 metamorphAudioSequence = 0
               }
-              if (revealedSquares[0].style.backgroundImage === `url("../images/pokemon_8.png")`) {
+              if (revealedSquares[0].style.backgroundImage === `url("./images/pokemon_8.png")`) {
 
                 newImage = revealedSquares[1].style.backgroundImage
                 revealedSquares[0].style.backgroundImage = newImage
-                revealedSquares[1].style.backgroundImage = `url("../images/pokemon_8.png")`
+                revealedSquares[1].style.backgroundImage = `url("./images/pokemon_8.png")`
               } else {
                 newImage = revealedSquares[0].style.backgroundImage
                 revealedSquares[1].style.backgroundImage = newImage
-                revealedSquares[0].style.backgroundImage = `url("../images/pokemon_8.png")`
+                revealedSquares[0].style.backgroundImage = `url("./images/pokemon_8.png")`
               }
             }
           }
@@ -265,14 +263,6 @@ function levelUp() {
   firstClick = true
   for (let i = 0; i < times.length; i++) {
     times[i].textContent = 0
-  }
-  game()
-}
-
-function replay() {
-  levelUpTag.hidden = true
-  for (let i = 0; i < squares.length; i++) {
-    squares[i].classList.replace('finished', 'hidden')
   }
   game()
 }
