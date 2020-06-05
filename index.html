@@ -5,18 +5,23 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property='og:image' content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"/>
+  <meta property='og:image'
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
   <title>PokeMory</title>
 </head>
 
 <body>
-  
+  <nav className='navbar'>
+    Pokemory in JavaScript
+  </nav>
   <audio id="final-level">
     <source src="sounds/background_music_2.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -61,11 +66,10 @@
     <source src="sounds/psykokwak_2.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  
 
 
-  <div style='max-width: 600px; height: 700px' class='container my-5 d-flex text-center flex-column p-2' >
-    <h1>PokeMory</h1>
+
+  <div style='max-width: 600px; height: 700px' class='container my-5 d-flex text-center flex-column p-2'>
     <p id='level'>Level #1</p>
     <p id='chronometer-tag'>
       <span id='ten-minutes' class='time'>0</span>
@@ -83,16 +87,23 @@
         <tr>
           <td class="hidden"></td>
           <td class='hidden'></td>
-          
+
         </tr>
         <tr>
           <td class='hidden'></td>
           <td class='hidden'></td>
-         
+
         </tr>
       </tbody>
     </table>
   </div>
+  <footer>
+    Created with <i class="fa fa-heart"></i> by Daniel Venera - 
+    <a href='https://github.com/Daniel-Venera/todoapp_react' target='_blank'><i class="fa fa-github"></i></a>
+    <a href="mailto:daniel.venera2@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+    <a href="https://www.linkedin.com/in/daniel-venera/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <br>
+  </footer>
   <script src="js/functions.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -105,6 +116,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
